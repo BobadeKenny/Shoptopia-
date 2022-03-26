@@ -1,10 +1,18 @@
 import React from "react";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import Home from "./components/Home"
 
 export default function App()
 {
 	return (
 		<React.Fragment>
-			<p>hello</p>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/">
+						<Home/>
+					</Route>
+				</Routes>
+			</BrowserRouter>
 		</React.Fragment>
 	)
 }
