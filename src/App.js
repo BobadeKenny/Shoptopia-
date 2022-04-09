@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home"
 
 export default function App()
@@ -8,9 +8,7 @@ export default function App()
 		<React.Fragment>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/">
-						<Home/>
-					</Route>
+					<Route path="/" element={<Home />}/>
 				</Routes>
 			</BrowserRouter>
 		</React.Fragment>
